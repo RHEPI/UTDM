@@ -14,8 +14,8 @@ The code is stable while using Python 3.8.5, CUDA >=11.7
 Clone this repository:
 
 ```yaml
-git clone ***
-cd ***
+git clone https://github.com/RHEPI/MDIR-UCDM.git
+cd MDIR-UCDM
 ```
 
 To install all the dependencies using conda:
