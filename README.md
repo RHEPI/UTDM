@@ -1,11 +1,11 @@
-# MDIR-UCDM: A Universal CFNET-based  Diffusion Model for Multi-weather Degraded Images Restoration
+# UTDM: A Universal Transformer-based  Diffusion Model for Multi-weather Degraded Images Restoration
 
 This is the code repository of the following paper.
 
 "MDIR-UCDM: A Universal CFNET-based  Diffusion Model for Multi-weather Degraded Images Restoration"\
 <em>Yongbo Yu, Weidong Li, Linyan Bai, Jinlong Duan, Xuehai Zhang</em>
 
-> **Abstract**: Restoring multi-weather degraded images is significant for subsequent high-level computer vision tasks. However, most existing image restoration algorithms only target single-weather degraded images, and there are few general models for multi-weather degraded image restoration. In this paper, we propose a diffusion model for multi-weather degraded image restoration, namely A Universal CFNET-based  Diffusion Model for Multi-weather Degraded Images Restoration (MDIR-UCDM), by combining the denoising diffusion probability model (DDPM) and Vision Transformer (ViT). First, MDIR-UCDM uses weather-degraded images as conditions to guide the diffusion model to generate clean background images through reverse sampling. Secondly, we propose a Cascaded Fusion Noise Estimation Transformer (CFNET) based on ViT, which utilizes degraded and noisy images for noise estimation. By introducing Cascaded Contextual Fusion Attention (CCFA) in a cascaded manner to compute contextual fusion attention mechanisms for different heads, CFNET explores the commonalities and characteristics of multi-weather degraded images, fully capturing global and local feature information to improve the model's generalization ability on various weather-degraded images. MDIR-UCDM outperformed the existing algorithm by 0.14~4.55dB on the Raindrop-A test set, and improved by 0.99dB and 1.24dB compared with Transweather on the Snow100K-L and Test1 test sets. Experimental results show that our method outperforms general and specific restoration task algorithms on synthetic and real-world degraded image datasets.
+> **Abstract**: Restoring multi-weather degraded images is significant for subsequent high-level computer vision tasks. However, most existing image restoration algorithms only target single-weather degraded images, and there are few general models for multi-weather degraded image restoration. In this paper, we propose a diffusion model for multi-weather degraded image restoration, namely A Universal Transformer-based  Diffusion Model (UTDM) for Multi-weather Degraded Images Restoration, by combining the denoising diffusion probability model (DDPM) and Vision Transformer (ViT). First, UTDM uses weather-degraded images as conditions to guide the diffusion model to generate clean background images through reverse sampling. Secondly, we propose a Cascaded Fusion Noise Estimation Transformer (CFNET) based on ViT, which utilizes degraded and noisy images for noise estimation. By introducing Cascaded Contextual Fusion Attention (CCFA) in a cascaded manner to compute contextual fusion attention mechanisms for different heads, CFNET explores the commonalities and characteristics of multi-weather degraded images, fully capturing global and local feature information to improve the model's generalization ability on various weather-degraded images. UTDM outperformed the existing algorithm by 0.14~4.55dB on the Raindrop-A test set, and improved by 0.99dB and 1.24dB compared with Transweather on the Snow100K-L and Test1 test sets. Experimental results show that our method outperforms general and specific restoration task algorithms on synthetic and real-world degraded image datasets.
 
 ## Using the code:
 
@@ -14,15 +14,15 @@ The code is stable while using Python 3.8.5, CUDA >=11.7
 Clone this repository:
 
 ```yaml
-git clone https://github.com/RHEPI/MDIR-UCDM.git
-cd MDIR-UCDM
+git clone https://github.com/RHEPI/UTDM.git
+cd UTDM
 ```
 
 To install all the dependencies using conda:
 
 ```yaml
 conda env create -f environment.yml
-conda activate MDIR-UCDM
+conda activate UTDM
 ```
 
 If you prefer pip, install following versions:
@@ -76,12 +76,10 @@ Visual comparison of different algorithms on the **Raindrop-A** dataset:
 <img src="imgs/fig2.png">
 
 Visual comparison of different algorithms on the **Outdoor-Rain** dataset:
-
-![](D:\总文件\研2下\扩散模型天气退化模型\论文代码\MDIR-UCDM\imgs\fig3.png)
+<img src="imgs/fig3.png">
 
 Visual comparison of different algorithms on the **Snow100K** dataset:
-
-![](D:\总文件\研2下\扩散模型天气退化模型\论文代码\MDIR-UCDM\imgs\fig4.png)
+<img src="imgs/fig4.png">
 
 ## Acknowledgments
 
