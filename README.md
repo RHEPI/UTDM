@@ -9,7 +9,7 @@ This is the code repository of the following paper.
 
 ## Using the code:
 
-The code is stable while using Python 3.8.5, CUDA >=11.7
+The code is stable while using Python 3.8.5.
 
 Clone this repository:
 
@@ -28,13 +28,13 @@ conda activate UTDM
 If you prefer pip, install following versions:
 
 ```yaml
-timm==0.9.12
-torch==2.0.1+cu117
-torchvision==0.15.2
-opencv-python==4.8.1.78
-pillow==9.4.0
+timm==0.9
+torch==2.0.1
+torchvision==0.15
+opencv-python==4.8
+pillow==9.4
 yaml==0.2.5
-tqdm==4.65.0
+tqdm==4.65
 ```
 
 ## Datasets
